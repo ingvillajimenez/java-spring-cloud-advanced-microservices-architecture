@@ -1,0 +1,41 @@
+package com.example.demo;
+
+import java.lang.annotation.Annotation;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.security.access.prepost.PreFilter;
+
+@SpringBootApplication
+@EnableZuulProxy
+public class ApiGatewayApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ApiGatewayApplication.class, args);
+	}
+
+	public PreFilter preFilter() {
+		
+		return new PreFilter() {
+			
+			@Override
+			public Class<? extends Annotation> annotationType() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public String value() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public String filterTarget() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		};
+	}
+}

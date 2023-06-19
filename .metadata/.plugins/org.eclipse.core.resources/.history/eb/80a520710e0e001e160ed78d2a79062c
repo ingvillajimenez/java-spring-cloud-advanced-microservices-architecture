@@ -1,0 +1,27 @@
+server:
+  port: ${PORT:8098}
+  
+# configure eureka client
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 3
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:2224/eureka/
+
+
+# custom attribute for the actuator info endpoint
+info:
+  app:
+    name: inventory
+    
+# give the application a name
+spring:
+  application:
+    name: inventory
+
+#disable actuator security for endpoints
+management:
+  security:
+    enabled: false

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/juan/code/skillsoft/full-stack-java-developer/microservices/java-spring-cloud-advanced-microservices-architecture/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2674927121.index
+750971458.index
+318185993.index
+1573700716.index
+2626073874.index
+3698041405.index
